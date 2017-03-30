@@ -2,10 +2,13 @@
 
 ## Overview
 
-* [My Awesome API](README.md)
-* [conso.json](consojson.md)
+* [Conso API](README.md)
+* [Conso.json](consojson.md)
 
 ## Methods
 
-* [Defining Methods](methods.md)
+* [Event](event.md)
+* [Message](methods.md)
+* Input
+* Player
 
