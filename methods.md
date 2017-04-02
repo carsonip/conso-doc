@@ -26,22 +26,23 @@ The content of the message.
 
 
 {% sample lang="js" %}
-Here is how to print a message to `stdout` using JavaScript.
+Here is how to handle the message received from the server.
 
 ```js
 var wsConfig = {
     onMessage: function(sender_id, data) {
-        //anything you may want to do
+        //data = 'this is an example'
+        console.log(data);
     }
 }
 var webSocket = new Conso(wsConfig);
 ```
 
 {% common %}
-Whatever language you are using, the result will be the same.
+The result displayed in client's console.
 
 ```bash
-$ My first method
+$ this is an example
 ```
 {% endmethod %}
 
