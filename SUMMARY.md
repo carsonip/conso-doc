@@ -7,8 +7,8 @@
 
 ## Methods
 
-* [Event](event.md)
+* [Connectivity](event.md)
 * [Message](methods.md)
-* Input
-* Player
+* [Input](input.md)
+* [Player](player.md)
 

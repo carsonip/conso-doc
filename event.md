@@ -1,109 +1,70 @@
-# Category: Message
-
+# Category: Connectivity
 ---
-
 
 These methods and event handlers handle message between server and clients.
 
 
-
-
-
 {% method %}
+### .onConnect()
 
-\#\#\# .onMessage\(\)
+Bind an event hander to the 'connect' of webSocket event.
 
+> .onConnect( eventData )
 
-
-Bind an event hander to the 'message' of webSocket event.
-
-
-
-&gt; .onMessage\( sender , eventData \)
-
-
-
-\_\_sender\_\_
-
-Type: String
-
-
-
-\_\_eventData\_\_
+__eventData__
 
 Type: Anything
 
-
-
+The object of the connection event.
 
 
 {% sample lang="js" %}
 
-Here is how to print a message to \`stdout\` using JavaScript.
+Here is how to establish the safety connection between server and client.
 
 
-
-\`\`\`js
-
-console.log\('My first method'\);
-
-\`\`\`
-
-
-
-{% common %}
-
-Whatever language you are using, the result will be the same.
-
-
-
-\`\`\`bash
-
-$ My first method
-
-\`\`\`
+```js
+var wsConfig = {
+    onConnect: function (event) {
+        //call other api function
+    }
+}
+var webSocket = new Conso(wsConfig);
+```
 
 {% endmethod %}
-
-
-
 
 
 {% method %}
+### .onClose()
 
-\#\#\# .message\(\)
+Bind an event hander to the 'close' of webSocket event.
 
+> .onClose( eventData )
 
+__eventData__
 
-My first method exposes how to print a message in JavaScript and Go.
+Type: Anything
 
+The object of the close event.
 
 
 {% sample lang="js" %}
 
-Here is how to print a message to \`stdout\` using JavaScript.
+Here is how to close the connection between server and client.
 
-
-
-\`\`\`js
-
-console.log\('My first method'\);
-
-\`\`\`
-
-
-
-{% common %}
-
-Whatever language you are using, the result will be the same.
-
-
-
-\`\`\`bash
-
-$ My first method
-
-\`\`\`
+```js
+var wsConfig = {
+    onClose: function (event) {
+        //do something
+    }
+}
+var webSocket = new Conso(wsConfig);
+```
 
 {% endmethod %}
+
+
+
+
 
