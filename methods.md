@@ -12,17 +12,29 @@ Bind an event hander to the 'message' of webSocket event.
 > .onMessage( sender , eventData )
 
 __sender__
+
 Type: String
 
+A String of ID of the sneder.
+
+
 __eventData__
+
 Type: Anything
+
+The content of the message.
 
 
 {% sample lang="js" %}
 Here is how to print a message to `stdout` using JavaScript.
 
 ```js
-console.log('My first method');
+var wsConfig = {
+    onMessage: function(sender_id, data) {
+        //anything you may want to do
+    }
+}
+var webSocket = new Conso(wsConfig);
 ```
 
 {% common %}
@@ -41,25 +53,28 @@ Send a message to a specific display client or player client.
 >message( receiver, data )
 
 __receiver__
+
 Type: String
+
 A String of ID of the target.
 
 __data__
+
 Type: Anything
+
 The content of the message.
 
 
 {% sample lang="js" %}
-Here is how to send a message to `stdout` using JavaScript.
+Here is how to send a message.
 
 ```js
-console.log('My first method');
+var wsConfig = {
+    onConnect: function (event) {
+        webSocket.message($player_id, 'this is an example');
+    }
+}
+var webSocket = new Conso(wsConfig);
 ```
 
-{% common %}
-Whatever language you are using, the result will be the same.
-
-```bash
-$ My first method
-```
 {% endmethod %}
