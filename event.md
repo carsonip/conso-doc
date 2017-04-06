@@ -71,27 +71,6 @@ var conso = new Conso(wsConfig);
 ### .onAllPlayersReady()
 
 WIP
-> .onClose( eventData )
-
-__eventData__
-
-Type: Anything
-
-The object of the close event.
-
-
-{% sample lang="js" %}
-
-Here is how to close the connection between server and client.
-
-```js
-var wsConfig = {
-onClose: function (event) {
-//do something
-}
-}
-var conso = new Conso(wsConfig);
-```
 
 {% endmethod %}
 
