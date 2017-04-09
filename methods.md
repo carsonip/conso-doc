@@ -15,7 +15,7 @@ __sender__
 
 Type: String
 
-A String of ID of the sneder.
+A String of ID of the sender.
 
 
 __eventData__
@@ -30,7 +30,7 @@ Here is how to handle the message received from the server.
 
 ```js
 var wsConfig = {
-    onMessage: function(sender_id, data) {
+    onMessage: function(senderId, data) {
         //data = 'this is an example'
         console.log(data);
     }
