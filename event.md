@@ -68,8 +68,15 @@ var conso = new Conso(wsConfig);
 {% endmethod %}
 
 {% method %}
-### .onAllPlayersReady()
+### .onPlayerLoaded()
+ Only received by display
+WIP
 
+{% endmethod %}
+
+{% method %}
+### .onAllPlayersLoaded()
+both display and controller will receive
 WIP
 
 {% endmethod %}
