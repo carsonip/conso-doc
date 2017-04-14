@@ -1,4 +1,4 @@
-## Sample conso.json
+# Sample conso.json
 
 ```
 {

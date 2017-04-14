@@ -4,6 +4,7 @@
 
 * [Conso API](README.md)
 * [Conso.json](consojson.md)
+* [Getting Started](api-sample.md)
 
 ## Methods
 
