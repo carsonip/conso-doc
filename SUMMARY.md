@@ -10,6 +10,5 @@
 
 * [Connectivity](event.md)
 * [Message](methods.md)
-* [Input](input.md)
 * [Player](player.md)
 

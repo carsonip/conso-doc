@@ -17,19 +17,19 @@ The `index.html` is for the gaming's screen.
 
 The `controller.html` is for the players' screen
 
-
-
 #### Javascript API file
 
 Include the Javascript API file in both `index.html` and `controller.html`
 
-
+```HTML
+<script src="conso-1.0.0.js"></script>
+```
 
 #### Sample of getting user input
 
 `index.html`
 
-```
+```HTML
 <!doctype html>
 <html>
 
@@ -100,11 +100,9 @@ Include the Javascript API file in both `index.html` and `controller.html`
 </html>
 ```
 
-
-
 `controller.html`
 
-```
+```HTML
 <!doctype html>
 <html>
 
@@ -311,8 +309,6 @@ Include the Javascript API file in both `index.html` and `controller.html`
 #### 
 
 #### Test Your Game
-
-![](/assets/螢幕快照 2017-04-14 下午3.17.34.png)
 
 
 
