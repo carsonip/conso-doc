@@ -5,7 +5,16 @@ These methods and event handlers handle message between server and clients.
 
 ### isDisplay
 
-WIP
+Indicates whether the client is a display client or a mobile client.
+
+```js
+var wsConfig = {
+    isDisplay: true
+}
+var conso = new Conso(wsConfig);
+```
+
+
 
 {% method %}
 ### .onConnect()
